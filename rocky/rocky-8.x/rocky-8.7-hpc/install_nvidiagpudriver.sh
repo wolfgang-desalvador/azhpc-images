@@ -1,3 +1,3 @@
 #!/bin/bash
 
-$COMMON_DIR/../alma/alma-8.x/common/install_nvidiagpudriver.sh
+$COMMON_DIR/../rocky/rocky-8.x/common/install_nvidiagpudriver.sh

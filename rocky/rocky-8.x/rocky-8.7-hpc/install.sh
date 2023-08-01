@@ -38,7 +38,7 @@ rm -Rf -- */
 ./install_nccl.sh
 
 # Install NVIDIA docker container
-$COMMON_DIR/../alma/alma-8.x/common/install_docker.sh
+$COMMON_DIR/../rocky/rocky-8.x/common/install_docker.sh
 
 # Install DCGM
 ./install_dcgm.sh
@@ -50,16 +50,16 @@ $COMMON_DIR/../alma/alma-8.x/common/install_docker.sh
 $COMMON_DIR/install_azure_persistent_rdma_naming.sh
 
 # add udev rule
-$COMMON_DIR/../alma/common/add-udev-rules.sh
+$COMMON_DIR/../rocky/common/add-udev-rules.sh
 
 # add interface rules
-$COMMON_DIR/../alma/common/network-config.sh
+$COMMON_DIR/../rocky/common/network-config.sh
 
 # install diagnostic script
 $COMMON_DIR/install_hpcdiag.sh
 
 #install monitoring tools
-$COMMON_DIR/../alma/common/install_monitoring_tools.sh
+$COMMON_DIR/../rocky/common/install_monitoring_tools.sh
 
 # install Azure/NHC Health Checks
 $COMMON_DIR/install_health_checks.sh

@@ -4,7 +4,7 @@ set -ex
 LUSTRE_VERSION=2.15.1_24_gbaa21ca
 
 # Expected params:
-# $1 = the major version of the distro. "8" for RHEL/Alma8, "9" for RHEL/Alma9.
+# $1 = the major version of the distro. "8" for RHEL/Rocky8, "9" for RHEL/Rocky9.
 
 source $ROCKY_COMMON_DIR/setup_lustre_repo.sh "$1"
 

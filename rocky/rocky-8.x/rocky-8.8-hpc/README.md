@@ -1,6 +1,6 @@
-# Rocky Linux 8.7 HPC Image
+# Rocky Linux 8.8 HPC Image
 
-The Rocky Linux 8.7 HPC Image includes optimizations and recommended configurations to deliver optimal performance,
+The Rocky LInux 8.8 HPC Image includes optimizations and recommended configurations to deliver optimal performance,
 consistency, and reliability. This image consists of the following HPC tools and libraries:
 
 - Mellanox OFED

@@ -5,6 +5,9 @@ case ${DISTRIBUTION} in
     "rocky8.7") NCCL_VERSION="2.18.1-1";
         CUDA_VERSION="12.1";
         ;;
+    "rocky8.8") NCCL_VERSION="2.18.1-1";
+        CUDA_VERSION="12.1";
+        ;;
     *) ;;
 esac
 

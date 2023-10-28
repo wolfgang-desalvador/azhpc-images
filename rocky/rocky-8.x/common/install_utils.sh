@@ -1,12 +1,6 @@
 #!/bin/bash
 set -ex
 
-# Install Kernel dependencies
-KERNEL=( $(rpm -q kernel | sed 's/kernel\-//g') )
-yum install -y https://dl.rockylinux.org/vault/rocky/8.7/BaseOS/x86_64/os/Packages/k/kernel-devel-${KERNEL}.rpm \
-    https://dl.rockylinux.org/vault/rocky/8.7/BaseOS/x86_64/os/Packages/k/kernel-headers-${KERNEL}.rpm \
-    https://dl.rockylinux.org/vault/rocky/8.7/BaseOS/x86_64/os/Packages/k/kernel-modules-extra-${KERNEL}.rpm
-
 # Install Python 3.8
 yum install -y python3.8
 ln -fs /usr/bin/python3.8 /usr/bin/python3

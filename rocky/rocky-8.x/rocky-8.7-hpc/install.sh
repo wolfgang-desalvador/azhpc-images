@@ -8,7 +8,7 @@ source ./set_properties.sh
 ./install_utils.sh
 
 # install Lustre client
-$ROCKY_COMMON_DIR/install_lustre_client.sh "8"
+./install_lustre_client.sh "8"
 
 # install compilers
 ./install_gcc.sh

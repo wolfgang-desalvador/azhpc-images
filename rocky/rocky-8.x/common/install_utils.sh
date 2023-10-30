@@ -52,7 +52,7 @@ yum install -y numactl \
     pciutils
 
 ## Disable kernel updates
-echo "exclude=kernel* kmod*" | tee -a /etc/dnf/dnf.conf
+echo "exclude=kernel*" | tee -a /etc/dnf/dnf.conf
 
 # Disable dependencies on kernel core
 sed -i "$ s/$/ shim*/" /etc/dnf/dnf.conf

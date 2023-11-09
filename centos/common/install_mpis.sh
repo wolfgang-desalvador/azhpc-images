@@ -17,7 +17,7 @@ set GCC=/opt/${GCC_VERSION}/bin/gcc
 # MVAPICH2 2.3.6
 MV2_VERSION="2.3.6"
 $COMMON_DIR/write_component_version.sh "MVAPICH2" ${MV2_VERSION}
-MV2_DOWNLOAD_URL=http://mvapich.cse.ohio-state.edu/download/mvapich/mv2/mvapich2-${MV2_VERSION}.tar.gz
+MV2_DOWNLOAD_URL=https://mvapich.cse.ohio-state.edu/download/mvapich/mv2/mvapich2-${MV2_VERSION}.tar.gz
 $COMMON_DIR/download_and_verify.sh $MV2_DOWNLOAD_URL "b3a62f2a05407191b856485f99da05f5e769d6381cd63e2fcb83ee98fc46a249"
 tar -xvf mvapich2-${MV2_VERSION}.tar.gz
 cd mvapich2-${MV2_VERSION}
